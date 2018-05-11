@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#D5647E"
+        android:id="@+id/linear1_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/information_activity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_lines" />
+
+        <TextView
+            android:id="@+id/nowplaying_music"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="MUSIC"
+            android:layout_weight="2"
+            android:textColor="#392C2C"
+            android:textSize="20sp"
+          />
+
+        <ImageView
+            android:layout_weight="0.2"
+            android:id="@+id/star_music"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_action_star" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#D5647E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1_music"
+        android:id="@+id/linear2_music">
+        <TextView
+            android:id="@+id/playlist_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="PLAYLIST"
+            android:textColor="#392C2C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/available_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="AVAILABLE"
+            android:textColor="#392C2C"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/recent_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="RECENT"
+            android:textColor="#392C2C"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="#D5647E"
+        android:layout_below="@id/linear2_music"
+        android:layout_above="@id/linear3_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/music"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear3_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#443D4E"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_backward" />
+
+        <ImageView
+            android:id="@+id/play_music"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_play" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_forward" />
+
+    </LinearLayout>
+
+</RelativeLayout>
